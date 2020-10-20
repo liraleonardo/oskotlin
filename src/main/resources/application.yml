@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://${postgres.hostname:localhost}:${postgres.port:5432}/${postgres.dbname:oskotlin}
+    driver-class-name: org.postgresql.Driver
+    username: ${postgres.user:postgres}
+    password: ${postgres.password:fpf@1212}
