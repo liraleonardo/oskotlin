@@ -7,7 +7,7 @@ import javax.validation.constraints.Email
 import javax.validation.constraints.NotBlank
 
 
-@Table(schema = "oskotlin")
+@Table(schema = "oskotlin", name = "client")
 @Entity
 @Data
 class Client  {
@@ -22,5 +22,6 @@ class Client  {
 
         @Email(message="Email invalido")
         var email: String?=null
+
 
 }

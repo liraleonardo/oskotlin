@@ -4,5 +4,8 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
+    <include file="liquibase/oskotlin/changelog/20201020111600_create_table_client.sql" relativeToChangelogFile="false"/>
+
+    <include file="liquibase/oskotlin/changelog/20201020112900_insert_in_table_client.sql" relativeToChangelogFile="false"/>
 
 </databaseChangeLog>
